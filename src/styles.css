@@ -1,1 +1,92 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+/* <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> */
+:root {
+  /** DEFAULT COLORS **/
+  /* Primary colors */
+  --color-primary-high: #4F1553;
+  --color-primary-medium: #633D92;
+  --color-primary-low: #9479B7;
+  --color-primary-light: #BBAFD6;
+  /* Creator theme color */
+  --color-creator-high: #A67C00;
+  --color-creator-medium: #BF9B30;
+  --color-creator-low: #FFBF00;
+  --color-creator-light: #FFCF40;
+  --color-creator-lighter: #FFDC73;
+  /* Black colors */
+  --color-black-dark: rgba(0, 0, 0, .9);
+  --color-black-medium: rgba(0, 0, 0, .6);
+  --color-black-light: rgba(0, 0, 0, .5);
+  --color-black-lighter: #9E9E9E;
+  /* Gray colors */
+  --color-gray-dark: #C2C2C2;
+  --color-gray-medium: #E5E5E5;
+  --color-gray-light: #F5F5F5;
+  /* Error colors */
+  --color-error-dark: #C62828;
+  --color-error-medium: #E53935;
+  --color-error-light: #FCE7E7;
+
+  /* Default font */
+  font-family: 'Roboto', sans-serif;
+  color: var(--color-gray-light);
+
+  background-color: var(--color-primary-light);
+  /* font-family: 'Press Start 2P', cursive; */
+}
+
+/** DEFAULT FONTS **/
+/* Roboto title */
+.title-big {
+  font-size: 60px;
+}
+.title-medium {
+  font-size: 46px;
+}
+.title-small {
+  font-size: 35px;
+}
+.title-smaller {
+  font-size: 20px;
+}
+
+/* Press Start 2P title */
+.title-styled-big {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 40px;
+}
+.title-styled-medium {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 35px;
+}
+.title-styled-small {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 22px;
+}
+.title-styled-smaller {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 15px;
+}
+
+/* Roboto Body text */
+.body-big {
+  font-weight: lighter;
+  font-size: 27px;
+}
+.body-medium {
+  font-weight: lighter;
+  font-size: 18px;
+}
+.body-small {
+  font-weight: lighter;
+  font-size: 16px;
+}
+.body-smaller {
+  font-weight: lighter;
+  font-size: 12px;
+}
+
+/**------------------------------------------**/

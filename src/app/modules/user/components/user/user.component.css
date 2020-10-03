@@ -1,0 +1,111 @@
+.user-card {
+  /* Element Position */
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  /* Element Size */
+  width: 428px;
+  height: 167px;
+
+  /* Colors */
+  box-shadow: 0px 4px 8px 0px rgba(79, 21, 83, .3);
+  background: var(--color-primary-medium);
+
+  /* Effects */
+  opacity: 1;
+  cursor: pointer;
+
+  transition: opacity, box-shadow .3s;
+  -webkit-transition: opacity, box-shadow .3s;
+}
+.user-card:hover {
+  /* Colors */
+  box-shadow: 0px 8px 16px 0px rgba(79, 21, 83, .3);
+
+  /* Effects */
+  opacity: .85;
+}
+.user-card:after {
+  /* Element Position */
+  position: absolute;
+  top: calc(50% - height);
+  right: calc(50% - font-size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Element Size */
+  width: 352px;
+  height: 66px;
+  border-radius: 60px;
+
+  /* Colors */
+  background: rgba(148, 121, 183, .8);
+
+  /* Font */
+  content: "SEE MORE";
+  font-family: 'Press Start 2P', cursive;
+  font-size: 40px;
+  color: var(--color-primary-high);
+
+  /* Effects */
+  opacity: 0;
+  transition: all .3s ease-in-out;
+}
+.user-card:hover:after {
+  /* Effect */
+  opacity: 1;
+}
+
+.user-avatar {
+  /* Element Size */
+  width: 143px;
+  height: 150px;
+  border: 2px solid var(--color-primary-high);
+  border-radius: 50%;
+}
+
+.user-info-card {
+  /* Element Position */
+  display: flex;
+  flex-wrap: wrap;
+
+  /* Element Size */
+  width: 240px;
+  height: 106px;
+}
+
+.user-username {
+  /* Element Position */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Element Size */
+  width: 100%;
+  height: 32px;
+
+  /* Colors */
+  background: var(--color-primary-high);
+  color: var(--color-gray-medium);
+
+}
+
+.user-name {
+  /* Element Position */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Element Size */
+  width: 100%;
+  height: 74px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+
+  /* Colors */
+  background-color: var(--color-primary-light);
+  color: var(--color-primary-high);
+}
