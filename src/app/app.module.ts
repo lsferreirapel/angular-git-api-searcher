@@ -4,9 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { UserComponent } from './modules/user/components/user/user.component';
-import { UserModule } from './modules/user/user.module';
-import { RepositoryModule } from './modules/repository/repository.module';
+import { DashboardModule } from './modules/dashboard/dashboard.module';
 
 
 
@@ -18,8 +16,7 @@ import { RepositoryModule } from './modules/repository/repository.module';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    UserModule,
-    RepositoryModule
+    DashboardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

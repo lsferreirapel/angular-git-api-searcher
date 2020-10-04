@@ -1,0 +1,71 @@
+.form-container {
+  /* Element Position */
+  display: flex;
+  align-content: center;
+
+  /* Element Size */
+  width: 1300px;
+  height: 90px;
+  margin: 30px auto;
+}
+.search-selector {
+  /* Element Position */
+  display: flex;
+  justify-items: center;
+  align-content: center;
+
+  /* Element Size */
+  width: 100px;
+  height: 100%;
+
+  /* Colors */
+  background-color: var(--color-primary-high);
+  color: var(--color-gray-light);
+
+  /* Effects */
+  cursor: pointer;
+}
+
+.search-input {
+  /* Element Position */
+  justify-self: flex-start;
+
+  /* Element Size */
+  width: 840px;
+  height: 100%;
+  margin-right: 42px;
+  padding-left: 20px;
+
+  /* Colors */
+  background-color: var(--color-gray-light);
+  color: var(--color-primary-high);
+
+  /* Effects */
+  cursor: pointer;
+}
+/* Input Placeholder style */
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--color-primary-high);
+  opacity: .9; /* Firefox */
+}
+
+.search-button {
+  /* Element Position */
+  justify-self: flex-end;
+
+  /* Element Size */
+  width: 340px;
+  height: 100%;
+
+  /* Colors */
+  background-color: #219653;
+  color: var(--color-gray-light);
+
+  /* Effects */
+  transition: all .3s ease;
+  cursor: pointer;
+}
+.search-button:hover {
+  /* Colors */
+  background-color: #0BC054;
+}

@@ -4,6 +4,4 @@ export interface Repository {
   html_url: string;
   description: string;
   language: string;
-  // id: string;
-
 }

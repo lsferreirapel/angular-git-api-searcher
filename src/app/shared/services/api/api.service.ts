@@ -2,8 +2,9 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
-import { Repository } from 'src/app/modules/repository/components/repository/repository';
-import { User } from 'src/app/modules/user/components/user/user';
+import { Repository } from 'src/app/modules/dashboard/components/repository-list/components/repository/repository';
+import { User } from 'src/app/modules/dashboard/components/user-list/components/user/user';
+
 
 
 
