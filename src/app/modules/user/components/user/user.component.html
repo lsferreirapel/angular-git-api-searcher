@@ -2,14 +2,18 @@
 
 <!-- <gs-response-list></gs-response-list> -->
 
-<div class="user-card">
-  <img  class="user-avatar" [src]="githubAvatar">
-  <div class="user-info-card">
-    <div class="user-username">
-      <h2 class="title-styled-smaller">{{ login }}</h2>
-    </div>
-    <div class="user-name">
-      <h3 class="title-smaller">{{ name }}</h3>
+<div class="users-list">
+<div *ngFor="let user of searchUsers" >
+  <div class="user-card">
+    <img class="user-avatar" [src]="user.avatar_url">
+    <div class="user-info-card">
+      <div class="user-username">
+        <h2 class="title-styled-smaller">{{ user.login }}</h2>
+      </div>
+      <div class="user-name">
+        <h3 class="title-smaller">{{ user.name }}</h3>
+      </div>
     </div>
   </div>
+</div>
 </div>

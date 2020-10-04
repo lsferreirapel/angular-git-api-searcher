@@ -1,0 +1,126 @@
+.repository-card {
+  /* Element Position */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  /* Element Size */
+  width: 365px;
+  height: 175px;
+  border-radius: 10px;
+
+  /* Colors */
+  background-color: var(--color-gray-light);
+
+  /* Font */
+  font-family: 'Press Start 2P', cursive;
+
+  /* Effect */
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px 0px rgba(79, 21, 83, .2);
+  overflow: hidden;
+}
+.repository-card:hover {
+  transform: scale(1.3);
+  opacity: .7;
+  box-shadow: 0px 8px 10px 0px rgba(79, 21, 83, .4);
+}
+.repository-card-header {
+  /* Element Position */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: flex-start;
+  align-self: center;
+
+  /* Element Size */
+  width: 320px;
+  height: 40px;
+
+  /* Colors */
+  background: transparent;
+  color: var(--color-primary-high);
+}
+
+.repository-header-icons {
+  /* Element Position */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* Element Size */
+  width: 80px;
+  height: 26px;
+
+  /* Colors */
+  background: inherit;
+}
+.x-icon, .less-icon {
+  width: 40%;
+  height: 100%;
+}
+.x-icon {
+  /* Element Size */
+  margin-right: 10px;
+
+  /* Font */
+  font-size: 25px;
+
+  /* Effect */
+  transition: all .2s ease;
+}
+.x-icon:hover {
+  color: #922b3e;
+}
+
+.less-icon {
+  /* Font */
+  font-size: 30px;
+
+  /* Effect */
+  transition: all .2s ease;
+}
+.less-icon:hover {
+  color: var(--color-primary-medium);
+}
+
+
+.repository-header-name {
+  /* Element Position */
+  margin-left: 25px;
+
+  /* Element Size */
+  width: 100%;
+  height: 100%;
+
+  /* Colors */
+  background: inherit;
+
+}
+
+.repository-card-body {
+  /* Element Size */
+  width: 320px;
+  height: 110px;
+  margin-bottom: 10px;
+
+  /* Colors */
+  background-color: var(--color-primary-high);
+}
+.repository-body-icons {
+  margin-top: 10px;
+  margin-left: 15px;
+
+  /* Colors */
+  color: var(--color-gray-light);
+}
+.repository-body-icons:after {
+  content: "_";
+  color: var(--color-gray-light);
+}
+.repository-card:hover .repository-body-icons:after {
+  content: "see  more_";
+}
+

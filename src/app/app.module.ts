@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 
 import { UserComponent } from './modules/user/components/user/user.component';
 import { UserModule } from './modules/user/user.module';
+import { RepositoryModule } from './modules/repository/repository.module';
 
 
 
@@ -17,7 +18,8 @@ import { UserModule } from './modules/user/user.module';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    UserModule
+    UserModule,
+    RepositoryModule
   ],
   providers: [],
   bootstrap: [AppComponent]

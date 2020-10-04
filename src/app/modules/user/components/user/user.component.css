@@ -1,3 +1,13 @@
+.users-list {
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  column-gap: 21px;
+  row-gap: 24px;
+
+  width: 1340px;
+  margin: 0 auto;
+}
+
 .user-card {
   /* Element Position */
   position: relative;

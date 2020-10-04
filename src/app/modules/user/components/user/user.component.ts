@@ -13,34 +13,74 @@ export class UserComponent implements OnInit{
   searchUsers: User[] = [];
   searchRepositories: Repository[] = [];
 
-  githubAvatar: string = ''
-  name: string = '';
-  login: string ='';
-  company: string = '';
-  bio: string = '';
-  location: string = '';
-  email: string = '';
+  githubAvatar: string = 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png';
+  name: string = 'Full Name';
+  login: string = 'User';
+  company: string = 'None';
+  bio: string = 'none';
+  location: string = 'none';
+  email: string = 'none@gmail.com';
 
-  githubUrl: string = '';
-  twitterUsername: string ='';
+  githubUrl: string = 'lsferreirapel';
+  twitterUsername: string ='lsferreirapel';
 
   repositories: Repository[] = [];
 
   constructor(private api: ApiService) { }
 
   ngOnInit() {
-    this.api.getUser('lsferreirapel').subscribe(user => {
-      this.githubAvatar = user.avatar_url;
-      this.name = user.name;
-      this.login = user.login;
-      this.company = user.company;
-      this.bio = user.bio;
-      this.location = user.location;
-      this.email = user.email;
-      this.githubUrl = user.html_url;
-      this.twitterUsername = user.twitter_username;
+    // this.api.getUser('lsferreirapel').subscribe(user => {
+    //   this.githubAvatar = user.avatar_url;
+    //   this.name = user.name;
+    //   this.login = user.login;
+    //   this.company = user.company;
+    //   this.bio = user.bio;
+    //   this.location = user.location;
+    //   this.email = user.email;
+    //   this.githubUrl = user.html_url;
+    //   this.twitterUsername = user.twitter_username;
 
-      this.searchUsers = this.searchUsers.concat(user);
-    })
+    //   this.searchUsers = this.searchUsers.concat(user);
+    //   this.searchUsers = this.searchUsers.concat(user);
+    //   this.searchUsers = this.searchUsers.concat(user);
+    //   this.searchUsers = this.searchUsers.concat(user);
+    //   this.searchUsers = this.searchUsers.concat(user);
+    //   this.searchUsers = this.searchUsers.concat(user);
+    //   this.searchUsers = this.searchUsers.concat(user);
+    //   this.searchUsers = this.searchUsers.concat(user);
+    //   this.searchUsers = this.searchUsers.concat(user);
+    //   this.searchUsers = this.searchUsers.concat(user);
+    //   this.searchUsers = this.searchUsers.concat(user);
+    //   this.searchUsers = this.searchUsers.concat(user);
+    //   this.searchUsers = this.searchUsers.concat(user);
+    //   this.searchUsers = this.searchUsers.concat(user);
+    //   this.searchUsers = this.searchUsers.concat(user);
+    //   this.searchUsers = this.searchUsers.concat(user);
+    //   this.searchUsers = this.searchUsers.concat(user);
+    //   this.searchUsers = this.searchUsers.concat(user);
+    // })
+    this.fakeUser();
+  }
+
+  fakeUser(): void {
+    let user: User = {
+      id: '123',
+      avatar_url: this.githubAvatar,
+      name: this.name,
+      login: this.login,
+      company: this.company,
+      bio: this.bio,
+      location: this.location,
+      email: this.email,
+      html_url: this.githubUrl,
+      twitter_username: this.twitterUsername,
+    };
+
+    this.searchUsers = this.searchUsers.concat(user);
+    this.searchUsers = this.searchUsers.concat(user);
+    this.searchUsers = this.searchUsers.concat(user);
+    this.searchUsers = this.searchUsers.concat(user);
+    this.searchUsers = this.searchUsers.concat(user);
+
   }
 }
