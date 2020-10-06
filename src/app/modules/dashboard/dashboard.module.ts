@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { NgModule, OnInit } from '@angular/core';
 
 // My imports
-import { RepositoryComponent } from './components/repository-list/components/repository/repository.component';
 import { SearchComponent } from './components/search/search.component';
 import { UserComponent } from './components/user-list/components/user/user.component';
 import { DashboardPage } from './pages/dashboard/dashboard.page';
@@ -12,8 +11,7 @@ import { DashboardPage } from './pages/dashboard/dashboard.page';
   declarations: [
     SearchComponent,
     DashboardPage,
-    UserComponent,
-    RepositoryComponent
+    UserComponent
   ],
   imports: [
     CommonModule

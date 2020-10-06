@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Repository } from 'src/app/modules/user/components/repository-list/components/repository/repository';
 
 import { ApiService } from 'src/app/shared/services/api/api.service';
-import { Repository } from '../../../repository-list/components/repository/repository';
 import { User } from '../../../../../../shared/models/user.model';
 
 @Component({

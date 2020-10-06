@@ -1,0 +1,48 @@
+.repositories {
+  /* Element Position */
+  display: flex;
+  flex-direction: column;
+
+  /* Element Size */
+  width: 1250px;
+  min-height: 290px;
+  margin: 20px auto;
+
+  /* Color */
+  background-color: var(--color-primary-light);
+  box-shadow: 0px 4px 8px 0px rgba(79, 21, 83, .5);
+}
+.repositories:hover {
+  /* Color */
+  box-shadow: 0px 8px 16px 0px rgba(79, 21, 83, .5);
+}
+.repositories-title {
+  /* Element Position */
+  text-align: center;
+
+  /* Element Size */
+  width: 100%;
+  padding: 15px 0;
+  margin-bottom: 18px;
+
+  /* Color */
+  background-color: var(--color-primary-high);
+}
+.repositories-list {
+  /* Element Positon */
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  gap: 0 2.5%;
+  justify-items: center;
+  justify-content: center;
+
+  /* Element Size */
+  width: 100%;
+
+  /* Font */
+  list-style: none;
+}
+.repository {
+  /* Element Size */
+  margin-bottom: 7.5%;
+}

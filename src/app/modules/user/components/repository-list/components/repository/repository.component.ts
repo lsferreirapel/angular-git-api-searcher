@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'gs-repository-list',
+  selector: 'gs-repository',
   templateUrl: './repository.component.html',
   styleUrls: ['./repository.component.css']
 })

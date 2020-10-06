@@ -23,6 +23,9 @@
   box-shadow: 0px 4px 8px 0px rgba(79, 21, 83, .3);
   background: var(--color-primary-medium);
 
+  /* Font */
+  text-decoration: none;
+
   /* Effects */
   opacity: 1;
   cursor: pointer;
