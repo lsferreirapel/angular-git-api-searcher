@@ -140,6 +140,20 @@ select[multiple]
 	vertical-align:top;
 }
 
+/* DEFAULT SCROLL */
+ ::-webkit-scrollbar {
+  width: 20px;
+  height: 50%;
+  border-radius: 30px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--color-primary-medium);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 30px;
+  background-color: var(--color-primary-low);
+}
+
 
 :root {
   /** DEFAULT COLORS **/
