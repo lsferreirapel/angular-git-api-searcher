@@ -4,7 +4,7 @@
 
 <div class="users-list">
 <div *ngFor="let user of searchUsers" >
-  <a href="/repos/{{user.login}}" class="user-card">
+  <a href="/users/{{user.login}}" class="user-card">
     <img class="user-avatar" [src]="user.avatar_url">
     <div class="user-info-card">
       <div class="user-username">

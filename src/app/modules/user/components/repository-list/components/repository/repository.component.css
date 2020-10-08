@@ -15,6 +15,7 @@
 
   /* Font */
   font-family: 'Press Start 2P', cursive;
+  text-decoration: none;
 
   /* Effect */
   transition: all .2s ease-in-out;

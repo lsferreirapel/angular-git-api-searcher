@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 
 import { DashboardModule } from './modules/dashboard/dashboard.module';
 import { UserModule } from './modules/user/user.module';
+import { RepositoryModule } from './modules/repository/repository.module';
 
 
 
@@ -18,7 +19,8 @@ import { UserModule } from './modules/user/user.module';
     AppRoutingModule,
     HttpClientModule,
     DashboardModule,
-    UserModule
+    UserModule,
+    RepositoryModule
   ],
   providers: [],
   bootstrap: [AppComponent]
