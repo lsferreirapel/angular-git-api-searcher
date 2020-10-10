@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 /* <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> */
 
+
 /* Reset Styles */
 * {
   margin: 0;
@@ -139,6 +140,7 @@ select[multiple]
 	/* Move the label to the top */
 	vertical-align:top;
 }
+
 
 /* DEFAULT SCROLL */
  ::-webkit-scrollbar {

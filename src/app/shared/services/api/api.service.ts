@@ -1,6 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { tap } from 'rxjs/operators';
 
 import { User } from 'src/app/modules/dashboard/components/user-list/components/user/user';
 import { Repository } from 'src/app/modules/user/components/repository-list/components/repository/repository';
@@ -31,18 +32,23 @@ export class ApiService {
       .get<Repository[]>(`${this.baseUrl}/${username}/repos`)
   }
 
-  getReadme() : Observable<string> {
-    // let header = {
-    //   'Content-Type': 'application/json',
-    //   'Accept': 'application/vnd.github.VERSION.raw',
-    //   'Access-Control-Allow-Headers': 'Content-Type',
-    // }
+  getReadme() : Observable<any> {
 
     return this.http
-      .get<string>(
-        // `${this.baseUrl}/repos/${username}/${repositoryName}/readme`,
-        `https://api.github.com/repos/diego3g/rocketredis/readme`,
-        { headers: new HttpHeaders({ Accept: 'application/vnd.github.VERSION.raw' }) }
-      );
+    .get(`https://api.github.com/repos/diego3g/rocketredis/readme`,
+      {
+        headers:  { Accept: 'application/vnd.github.VERSION.raw' },
+        responseType: 'text'
+      },
+    )
+
+
+    // return this.http
+    //   .get<string>(
+    //     // `${this.baseUrl}/repos/${username}/${repositoryName}/readme`,
+    //     `https://api.github.com/repos/diego3g/rocketredis/readme`,
+    //     { headers: { Accept: 'application/vnd.github.VERSION.raw' } }
+    //   );
+
   }
 }

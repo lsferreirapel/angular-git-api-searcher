@@ -1,13 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Repository } from 'src/app/shared/models/repository.model';
 import { User } from 'src/app/shared/models/user.model';
+import { ApiService } from 'src/app/shared/services/api/api.service';
 
 
 @Component({
   templateUrl: './repository.page.html',
   styleUrls: ['./repository.page.css']
 })
-export class RepositoryPage {
+export class RepositoryPage implements OnInit{
   user: User = new User().deserialize({
     id: "1",
     avatar_url: "none",
@@ -30,5 +31,12 @@ export class RepositoryPage {
     language: "javascript"
   }
 
+  readme: string = '';
+
+  constructor(private api: ApiService) { }
+
+  ngOnInit() {
+    this.api.getReadme().subscribe(res => this.readme = res)
+  }
 
 }

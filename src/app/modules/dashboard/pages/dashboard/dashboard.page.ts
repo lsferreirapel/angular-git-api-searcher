@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from 'src/app/shared/services/api/api.service';
 
 @Component({
   selector: 'gs-dashboard',
@@ -6,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard.page.css']
 })
 export class DashboardPage implements OnInit{
-  constructor() { }
+  constructor( private api: ApiService ) { }
 
-  ngOnInit() { }
+  ngOnInit() {
+    this.api.getReadme().subscribe(res => console.log(res));
+  }
 }
