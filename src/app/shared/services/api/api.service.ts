@@ -3,11 +3,8 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { tap } from 'rxjs/operators';
 
-import { User } from 'src/app/modules/dashboard/components/user-list/components/user/user';
 import { Repository } from 'src/app/modules/user/components/repository-list/components/repository/repository';
-
-
-
+import { User } from '../../models/user.model';
 
 @Injectable({
   providedIn: "root"
@@ -17,9 +14,9 @@ export class ApiService {
 
   constructor(private http: HttpClient) { }
 
-  getUser(username): Observable<User> {
+  searchUsers(username): Observable<any> {
     return this.http
-      .get<User>(`${this.baseUrl}/users/${username}`);
+      .get(`${this.baseUrl}/search/users?q=${username}`);
   }
 
   getRepository(username, repositoryName): Observable<Repository> {
@@ -35,7 +32,7 @@ export class ApiService {
   getReadme() : Observable<any> {
 
     return this.http
-    .get(`https://api.github.com/repos/diego3g/rocketredis/readme`,
+    .get(`https://api.github.com/repos/axios/axios/readme`,
       {
         headers:  { Accept: 'application/vnd.github.VERSION.raw' },
         responseType: 'text'

@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { MarkdownModule } from 'ngx-markdown';
 
@@ -10,6 +11,7 @@ import { RepositoryPage } from './pages/repository.page';
     RepositoryPage
   ],
   imports: [
+    CommonModule,
     MarkdownModule.forChild()
   ]
 })

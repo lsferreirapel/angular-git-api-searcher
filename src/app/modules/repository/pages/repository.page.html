@@ -22,11 +22,20 @@
     <div class="console-line-effect title-styled-medium">
       <h3 class="nowrap text-title" contenteditable="true">$GS C:\users\{{repository.owner.login}}\{{repository.name}}_</h3>
     </div>
-    <h2 class="title-styled-medium">Repository Readme</h2>
-    <gs-readme
-      [data]="readme">
-    </gs-readme>
-    <div class="access-button"></div>
+    <div class="buttons ">
+      <button class="access-button title-styled-medium">Access Here</button>
+      <button
+        class="readme-button title-styled-medium"
+        (click)="getReadme()"
+      >See Readme</button>
+    </div>
+    <div *ngIf="readme; else readmeError">
+      <gs-readme
+        [data]="readme">
+      </gs-readme>
+    </div>
+    <ng-template #readmeError>
+      <p class="found-error">Readme not found!</p>
+    </ng-template>
   </div>
-
 </div>

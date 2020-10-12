@@ -35,8 +35,9 @@ export class RepositoryPage implements OnInit{
 
   constructor(private api: ApiService) { }
 
-  ngOnInit() {
+  ngOnInit() { }
+
+  getReadme() {
     this.api.getReadme().subscribe(res => this.readme = res)
   }
-
 }
